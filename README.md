@@ -14,6 +14,8 @@ Projeto Interdisciplinar do 1º semestre de DSM da FATEC ZL — 2026/2.
 
 ### 1. Clonar o repositório pela primeira vez
 
+No Github:
+
 Acima da lista de arquivos, clique no botão <> **Code**.
 
 <img width="350" height="150" alt="image" src="https://github.com/user-attachments/assets/f62c8ac0-ffaf-4c0b-a43e-e378c5672ae9" />
@@ -27,15 +29,19 @@ Em seguida copie a URL do repositório, na aba **HTTPS**.
 
 <br>
 <br>
+
 No VSCode:
 
 Clique em **File** > Selecione **Open Folder...** > Escolha a pasta onde você deseja armazenar os projetos da faculdade > Clique em **Select Folder**.
+
 No menu superior: Clique em **Terminal** > Selecione **New Terminal** > Selecione **Git Bash**.<br>
+
 No terminal, digite:
 ```text
 git clone https://github.com/dsmfateczl/byte.git
 ```
-Após o clone terminar: <br>
+Após o clone terminar: 
+
 Clique em **File** > **Open Folder...** > Entre na pasta **byte** > Clique em **Select Folder**.
 
 Pronto! O projeto estará disponível no seu computador.
