@@ -11,7 +11,7 @@
     <!-- CABEÇALHO -->
     <header class="dflex">
         <div class="container dflex" style="justify-content: space-between; width: 100%;">
-            <div class="logo-container"><img class="logo" src="imagens/atumalak2.png" alt="Logo"></div>
+            <div class="logo-container"><a href="telainicial.html"><img class="logo" src="imagens/atumalak2.png" alt="Logo"></a></div>
             <nav>
                 <ul class="menu-links">
                     <li><a href="servicos.html">Serviços</a></li>
@@ -26,29 +26,44 @@
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
-    <main class="centralizar" style="height: auto; padding: 60px 0;">
-        <div class="container" style="color: white; font-family: Arial, sans-serif;">
-            
-            <div style="max-width: 650px; margin-bottom: 45px;">
-                <span style="color: #a855f7; font-weight: bold; letter-spacing: 2px; display: block; margin-bottom: 10px;">TRANSPARÊNCIA DO INÍCIO AO FIM</span>
-                <h1 style="font-size: 38px; font-weight: 800; margin-bottom: 20px;">Seu aparelho nas mãos certas. Você no controle.</h1>
-                <p style="color: #b3b3b3; line-height: 1.6;">Da entrada à retirada, explicamos cada diagnóstico, pedimos sua aprovação e atualizamos o status sem surpresas indesejadas.</p>
+    <main>
+        <div id="p-container">
+            <div id="p-conteudo-principal">
+                <div id="p-cp-texto">
+                <button id="button-cp">
+                    TRANSPARÊNCIA DO INÍCIO AO FIM</button>
+                <h1 class="texto-processos">Seu aparelho nas mãos certas. Você no controle.</h1>
+                <p class="subtexto-processos">Da entrada à retirada, explicamos cada diagnóstico, pedimos sua aprovação e atualizamos o status sem surpresas indesejadas.</p>
+                </div>
+                <div id="p-cp-img">
+                <img src="/imagens/tecnico-manutencao.webp" alt="">
+                </div>
             </div>
 
-            <div style="max-width: 650px;">
-                <span style="color: #a855f7; font-weight: bold; letter-spacing: 2px; display: block; margin-bottom: 10px;">ANTES DE TRAZER</span>
-                <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 15px;">Prepare o aparelho para um atendimento mais rápido:</h2>
-                
-                <ul style="display: flex; flex-direction: column; gap: 15px; color: #b3b3b3; line-height: 1.5;">
-                    <li><strong>• Documento com foto:</strong> Traga RG, CNH ou documento digital do titular para abertura e retirada segura.</li>
-                    <li><strong>• Senha de desbloqueio:</strong> Pode ser temporária, ela é usada estritamente para a realização dos testes pós-reparo.</li>
-                    <li><strong>• Backup recomendado:</strong> Salve suas fotos e conversas importantes antes de deixar o aparelho na assistência.</li>
-                    <li><strong>• Remova SIM e acessórios:</strong> Capinhas, cartões de memória e chips devem ficar com você.</li>
+            <div id="p-conteudo-secundario">
+                <span id="p-frase-cs">ANTES DE TRAZER</span>
+                <h2 class="texto-processos">Prepare o aparelho para um atendimento mais rápido</h2>
+                <p class="subtexto-processos">Poucos cuidados protegem seus dados e aceleram nosso diagnóstico.</p>
+                <ul class="lista-processos">
+                    <li>
+                        <span>ICON</span>
+                        <p>Documento com foto</p> 
+                        <p>Traga RG, CNH ou documento digital do titular para abertura e retirada segura.</p>
+                    </li>
+                    <li><span>ICON</span><p>Senha de desbloqueio</p> <p>Pode ser temporária, ela é usada estritamente para a realização dos testes pós-reparo.</p></li>
+                    <li><span>ICON</span><p>Backup recomendado</p>  <p>Salve suas fotos e conversas importantes antes de deixar o aparelho na assistência.</p></li>
+                    <li><span>ICON</span><p>Remova SIM e acessórios</p><p>Capinhas, cartões de memória e chips devem ficar com você.</p></li>
                 </ul>
+            </div>
+
+            <div id="p-conteudo-terciario">
+                <p class="texto-processos">Quatro etapas, nenhuma surpresa</p>
             </div>
 
         </div>
     </main>
-
+    <footer id="p-footer">
+        <p>footer</p>
+    </footer>
 </body>
 </html>
