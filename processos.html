@@ -16,7 +16,7 @@
                 <ul class="menu-links">
                     <li><a href="servicos.html">Serviços</a></li>
                     <li><a href="garantia.html">Garantia</a></li>
-                    <li><a href="processos.html">Processos</a></li>
+                    <li><a href="processos.html" class="p-nav-ativo">Processos</a></li>
                     <li><a href="sobre.html">Sobre a empresa</a></li>
                     <li><a href="#">Vitrine</a></li> <!-- Deixamos o sustenido pois não tem essa tela -->
                     <li><a href="faq.html">FAQ</a></li>
@@ -26,25 +26,25 @@
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
-    <main>
+    <main id="p-main">
         <div id="p-container">
-            <div id="p-conteudo-principal">
+            <section id="p-conteudo-principal">
                 <div id="p-cp-texto">
                 <button id="button-cp">
                     TRANSPARÊNCIA DO INÍCIO AO FIM</button>
-                <h1 class="texto-processos">Seu aparelho nas mãos certas. Você no controle.</h1>
+                <h1>Seu aparelho nas mãos certas. Você no controle.</h1>
                 <p class="subtexto-processos">Da entrada à retirada, explicamos cada diagnóstico, pedimos sua aprovação e atualizamos o status sem surpresas indesejadas.</p>
                 </div>
                 <div id="p-cp-img">
                 <img src="/imagens/tecnico-manutencao.webp" alt="">
                 </div>
-            </div>
+            </section>
 
-            <div id="p-conteudo-secundario">
-                <span id="p-frase-cs">ANTES DE TRAZER</span>
-                <h2 class="texto-processos">Prepare o aparelho para um atendimento mais rápido</h2>
+            <section id="p-conteudo-secundario">
+                <p class="p-frase">━━ ANTES DE TRAZER</p>
+                <p class="texto-processos">Prepare o aparelho para um atendimento mais rápido</p>
                 <p class="subtexto-processos">Poucos cuidados protegem seus dados e aceleram nosso diagnóstico.</p>
-                <ul class="lista-processos">
+                <ul id="lista-processos">
                     <li>
                         <span>ICON</span>
                         <p>Documento com foto</p> 
@@ -54,12 +54,19 @@
                     <li><span>ICON</span><p>Backup recomendado</p>  <p>Salve suas fotos e conversas importantes antes de deixar o aparelho na assistência.</p></li>
                     <li><span>ICON</span><p>Remova SIM e acessórios</p><p>Capinhas, cartões de memória e chips devem ficar com você.</p></li>
                 </ul>
-            </div>
+            </section>
 
-            <div id="p-conteudo-terciario">
+            <section id="p-conteudo-terciario">
+                <p class="p-frase">━━ COMO FUNCIONA</p>
                 <p class="texto-processos">Quatro etapas, nenhuma surpresa</p>
-            </div>
-
+                <p class="subtexto-processos">Um processo simples para você saber o que acontece, por que acontece e quando seu aparelho fica pronto.</p>
+                <ul id="lista-etapas">
+                    <li>ETAPA 01</li>
+                    <li>ETAPA 02</li>
+                    <li>ETAPA 03</li>
+                    <li>ETAPA 04</li>
+                </ul>
+            </section>
         </div>
     </main>
     <footer id="p-footer">
