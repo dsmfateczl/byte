@@ -78,18 +78,26 @@ main {
 }
 
 /* Página Processos */
-#p-container {
-    height: 100%;
-    width: 100%;
+
+nav ul li .p-nav-ativo {
+    color: #8A00FF;
+}
+
+#p-main {
+    min-height: calc(100vh - 60px);
+    height: auto;
 }
 
 #p-conteudo-principal {
-    height: 40%;
     background-color: #060608;
     display: flex;
     justify-content: space-between;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 20px 70px;
+}
+
+#p-conteudo-principal h1 {
+    color: #ffffff;
+    font-size: 62px;
 }
 
 #button-cp {
@@ -109,14 +117,18 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 60%;
 }
 
 .texto-processos {
     color: #ffffff;
+    font-size: 40px;
 }
 
 .subtexto-processos {
     color: #A8A4B2;
+    font-size: 18px;
+    padding-top: 10px;
 }
 
 #p-cp-img {
@@ -124,26 +136,26 @@ main {
 }
 
 #p-cp-img img {
-    width: 300px;
-    height: 270px;
+    width: 570px;
+    height: 470px;
     border-radius: 20%;
     box-shadow: 0 0 20px rgba(121, 43, 232, 0.5);
 }
 
 #p-conteudo-secundario {
-    height: 30%;
     background-color: #111116;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 20px 70px;
 }
 
-#p-frase-cs {
+.p-frase {
     color: #A83DFF;
+    font-size: 13px;
 }
 
 #p-conteudo-secundario ul {
     display: flex;
     width: 100%;
+    padding-top: 40px;
 }
 
 #p-conteudo-secundario ul li {
@@ -154,13 +166,30 @@ main {
 }
 
 #p-conteudo-terciario {
-    height: 30%;
-    background-color: #060608;
-    padding-left: 70px;
-    padding-right: 70px;
+   background-color: #060608;
+   padding: 20px 70px;
+}
+
+#p-conteudo-terciario ul {
+    display: flex;
+    width: 100%;
+    padding-top: 40px;
+}
+
+#p-conteudo-terciario ul li {
+    height: 200px;
+    width: 25%;
+}
+
+#p-conteudo-terciario ul li:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+#p-conteudo-terciario ul li:nth-child(even) {
+    background-color: #EFE2FA;
 }
 
 #p-footer {
-    height: 10%;
-    background-color: aqua;
+    background-color: #111116;
+    padding: 20px 70px;
 }
