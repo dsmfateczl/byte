@@ -1,76 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nossos Processos - BYTE</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- CABEÇALHO -->
     <header class="dflex">
-        <div class="container dflex" style="justify-content: space-between; width: 100%;">
-            <div class="logo-container"><a href="telainicial.html"><img class="logo" src="imagens/atumalak2.png" alt="Logo"></a></div>
-            <nav>
-                <ul class="menu-links">
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="garantia.html">Garantia</a></li>
-                    <li><a href="processos.html" class="p-nav-ativo">Processos</a></li>
-                    <li><a href="sobre.html">Sobre a empresa</a></li>
-                    <li><a href="#">Vitrine</a></li> <!-- Deixamos o sustenido pois não tem essa tela -->
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
-            </nav>
+      <div
+        class="container dflex"
+        style="justify-content: space-between; width: 100%"
+      >
+        <div class="logo-container">
+          <a href="telainicial.html"
+            ><img class="logo" src="imagens/atumalak2.png" alt="Logo"
+          /></a>
         </div>
+        <nav>
+          <ul class="menu-links">
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="garantia.html">Garantia</a></li>
+            <li><a href="processos.html" class="p-nav-ativo">Processos</a></li>
+            <li><a href="sobre.html">Sobre a empresa</a></li>
+            <li><a href="#">Vitrine</a></li>
+            <!-- Deixamos o sustenido pois não tem essa tela -->
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
     <main id="p-main">
-        <div id="p-container">
-            <section id="p-conteudo-principal">
-                <div id="p-cp-texto">
-                <button id="button-cp">
-                    TRANSPARÊNCIA DO INÍCIO AO FIM</button>
-                <h1>Seu aparelho nas mãos certas. Você no controle.</h1>
-                <p class="subtexto-processos">Da entrada à retirada, explicamos cada diagnóstico, pedimos sua aprovação e atualizamos o status sem surpresas indesejadas.</p>
-                </div>
-                <div id="p-cp-img">
-                <img src="/imagens/tecnico-manutencao.webp" alt="">
-                </div>
-            </section>
+      <div id="p-container">
+        <section id="p-conteudo-principal">
+          <div id="p-cp-texto">
+            <button id="button-cp">TRANSPARÊNCIA DO INÍCIO AO FIM</button>
+            <h1>Seu aparelho nas mãos certas. Você no controle.</h1>
+            <p class="subtexto-processos">
+              Da entrada à retirada, explicamos cada diagnóstico, pedimos sua
+              aprovação e atualizamos o status sem surpresas indesejadas.
+            </p>
+          </div>
+          <div id="p-cp-img">
+            <img src="/imagens/tecnico-manutencao.webp" alt="" />
+          </div>
+        </section>
 
-            <section id="p-conteudo-secundario">
-                <p class="p-frase">━━ ANTES DE TRAZER</p>
-                <p class="texto-processos">Prepare o aparelho para um atendimento mais rápido</p>
-                <p class="subtexto-processos">Poucos cuidados protegem seus dados e aceleram nosso diagnóstico.</p>
-                <ul id="lista-processos">
-                    <li>
-                        <span>ICON</span>
-                        <p>Documento com foto</p> 
-                        <p>Traga RG, CNH ou documento digital do titular para abertura e retirada segura.</p>
-                    </li>
-                    <li><span>ICON</span><p>Senha de desbloqueio</p> <p>Pode ser temporária, ela é usada estritamente para a realização dos testes pós-reparo.</p></li>
-                    <li><span>ICON</span><p>Backup recomendado</p>  <p>Salve suas fotos e conversas importantes antes de deixar o aparelho na assistência.</p></li>
-                    <li><span>ICON</span><p>Remova SIM e acessórios</p><p>Capinhas, cartões de memória e chips devem ficar com você.</p></li>
-                </ul>
-            </section>
+        <section id="p-conteudo-secundario">
+          <p class="p-frase">━━ ANTES DE TRAZER</p>
+          <p class="texto-processos">
+            Prepare o aparelho para um atendimento mais rápido
+          </p>
+          <p class="subtexto-processos">
+            Poucos cuidados protegem seus dados e aceleram nosso diagnóstico.
+          </p>
+          <ul id="lista-processos">
+            <li>
+              <div class="p-caixa-icone">
+                <i class="fa-solid fa-user p-icone"></i>
+              </div>
+              <p class="p-titulo-li">Documento com foto</p>
+              <p class="p-descricao-li">
+                Traga RG, CNH ou documento digital do titular para abertura e
+                retirada segura.
+              </p>
+            </li>
+            <li>
+              <div class="p-caixa-icone">
+                <i class="fa-solid fa-unlock p-icone"></i>
+              </div>
+              <p class="p-titulo-li">Senha de desbloqueio</p>
+              <p class="p-descricao-li">
+                Pode ser temporária, ela é usada estritamente para a realização
+                dos testes pós-reparo.
+              </p>
+            </li>
+            <li>
+              <div class="p-caixa-icone">
+                <i class="fa-solid fa-cloud p-icone"></i>
+              </div>
+              <p class="p-titulo-li">Backup recomendado</p>
+              <p class="p-descricao-li">
+                Salve suas fotos e conversas importantes antes de deixar o
+                aparelho na assistência.
+              </p>
+            </li>
+            <li>
+              <div class="p-caixa-icone">
+                <i class="fa-solid fa-circle-xmark p-icone"></i>
+              </div>
+              <p class="p-titulo-li">Remova SIM e acessórios</p>
+              <p class="p-descricao-li">
+                Capinhas, cartões de memória e chips devem ficar com você.
+              </p>
+            </li>
+          </ul>
+          <div class="p-cs-div-p">
+            <p id="p-cs-alerta">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              Aparelhos com sinais de líquido devem permanecer desligados. Não
+              tente carregar nem usar secador.
+            </p>
+          </div>
+        </section>
 
-            <section id="p-conteudo-terciario">
-                <p class="p-frase">━━ COMO FUNCIONA</p>
-                <p class="texto-processos">Quatro etapas, nenhuma surpresa</p>
-                <p class="subtexto-processos">Um processo simples para você saber o que acontece, por que acontece e quando seu aparelho fica pronto.</p>
-                <ul id="lista-etapas">
-                    <li>ETAPA 01</li>
-                    <li>ETAPA 02</li>
-                    <li>ETAPA 03</li>
-                    <li>ETAPA 04</li>
-                </ul>
-            </section>
-        </div>
+        <section id="p-conteudo-terciario">
+          <p class="p-frase">━━ COMO FUNCIONA</p>
+          <p class="texto-processos">Quatro etapas, nenhuma surpresa</p>
+          <p class="subtexto-processos">
+            Um processo simples para você saber o que acontece, por que acontece
+            e quando seu aparelho fica pronto.
+          </p>
+          <ul id="lista-etapas">
+            <li>
+              <p class="p-le-titulo">Etapa 01</p>
+              <hr class="p-divisoria" />
+              <p class="p-le-descricao">Entrada segura</p>
+              <p class="p-le-subdescricao">
+                Registramos o aparelho, acessórios, estado externo e sua
+                principal queixa.
+              </p>
+              <p class="p-le-tempo">10-15 MIN</p>
+            </li>
+            <li>
+              <p class="p-le-titulo">Etapa 02</p>
+              <hr class="p-divisoria" />
+              <p class="p-le-descricao">Avaliação técnica</p>
+              <p class="p-le-subdescricao">
+                Executamos testes objetivos e identificamos causa, peças e
+                alternativas.
+              </p>
+              <p class="p-le-tempo">ATÉ 2H ÚTEIS</p>
+            </li>
+            <li>
+              <p class="p-le-titulo">Etapa 03</p>
+              <hr class="p-divisoria" />
+              <p class="p-le-descricao">Aprovação e reparo</p>
+              <p class="p-le-subdescricao">
+                Você recebe o orçamento e o serviço só começa após sua
+                autorização.
+              </p>
+              <p class="p-le-tempo">PRAZO INFORMADO</p>
+            </li>
+            <li>
+              <p class="p-le-titulo">Etapa 04</p>
+              <hr class="p-divisoria" />
+              <p class="p-le-descricao">Retirada testada</p>
+              <p class="p-le-subdescricao">
+                Entregamos com checklist final, orientações e termo de garantia.
+              </p>
+              <p class="p-le-tempo">COM TESTE NA HORA</p>
+            </li>
+          </ul>
+          <div class="p-cs-div-p">
+            <p id="p-cs-orientacao">
+              <i class="fa-solid fa-circle-info"></i>
+              Em casos de dano por líquido ou falha intermitente, a avaliação
+              pode exigir observação adicional — sempre avisamos antes.
+            </p>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer id="p-footer">
-        <p>footer</p>
+    <footer>
+      <div id="p-footer-top">
+        <div>
+        <img class="logo-footer" src="imagens/atumalak2.png" alt="Logo"/>
+        <p>
+          BYTE Assistência Técnica - Líder em reparos rápidos de smartphones com
+          peças de procedência selecionada e garantia assegurada.
+        </p>
+        </div>
+        <ul>
+          <li>Navegação</li>
+          <li>Serviços</li>
+          <li>Garantia</li>
+          <li>Processos</li>
+        </ul>
+        <ul>
+          <li>Suporte e Contato</li>
+          <li>Vitrine</li>
+          <li>FAQ</li>
+          <li>Fale Conosco</li>
+          <li>Política de Privacidade</li>
+        </ul>
+      </div>
+      <div id="p-footer-bottom">
+        <p>© 2026 BYTE Assistência Técnica. Todos os direitos reservados.</p>
+        <p>Desenvolvido com foco em alto desempenho.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
