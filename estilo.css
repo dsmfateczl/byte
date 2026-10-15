@@ -91,7 +91,7 @@ nav ul li .p-nav-ativo {
   font-size: 62px;
 }
 
-#button-cp {
+#info-cp {
   background-color: #22102f;
   color: #a83dff;
   border: none;
@@ -101,8 +101,7 @@ nav ul li .p-nav-ativo {
   align-items: center;
   gap: 10px;
   font-size: 9px;
-  cursor: none;
-  width: 195px;
+  width: 220px;
 }
 
 #p-cp-texto {
@@ -136,7 +135,7 @@ nav ul li .p-nav-ativo {
 
 #p-conteudo-secundario {
   background-color: #111116;
-  padding: 20px 70px;
+  padding: 80px 70px;
 }
 
 .p-frase {
@@ -195,7 +194,7 @@ nav ul li .p-nav-ativo {
 #p-cs-alerta {
   font-size: 13px;
   color: #6b4b0b;
-  background-color: #f1d58e;
+  background-color: #F1D58E;
   border-radius: 13px;
   height: 40px;
   display: flex;
@@ -205,7 +204,7 @@ nav ul li .p-nav-ativo {
 
 #p-conteudo-terciario {
   background-color: #111116;
-  padding: 20px 70px;
+  padding: 80px 70px;
 }
 
 #p-conteudo-terciario ul {
@@ -215,9 +214,9 @@ nav ul li .p-nav-ativo {
 }
 
 #p-conteudo-terciario ul li {
-  height: 200px;
+  height: 250px;
   width: 25%;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-left: 15px;
 }
 
@@ -226,6 +225,7 @@ nav ul li .p-nav-ativo {
   height: 1px;
   background-color: #8a00ff;
   margin-top: 20px;
+  width: 95%;
 }
 
 #p-conteudo-terciario ul li .p-le-titulo {
@@ -275,10 +275,10 @@ nav ul li .p-nav-ativo {
   padding-right: 10px;
 }
 
-footer {
-  background-color: #111116;
+footer#footer-pp {
+  background-color: #0B0B0F;
   color: #a1a1aa;
-  padding: 20px 70px;
+  padding: 40px 70px;
   display: flex;
   flex-direction: column;
 }
@@ -291,6 +291,23 @@ footer {
 footer #p-footer-top {
   display: flex;
   justify-content: space-between;
+}
+
+footer #p-footer-top-esquerda {
+  width: 410px;
+}
+
+footer #lista-footer-pp {
+  display: flex;
+  gap: 60px;
+}
+
+footer #lista-footer-pp li {
+  padding-top: 10px;
+}
+
+.item-destaque-lista-pp {
+color: #FFFFFF;
 }
 
 footer #p-footer-bottom {
