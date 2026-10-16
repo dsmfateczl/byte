@@ -1,6 +1,8 @@
 # Byte
 
-Projeto Interdisciplinar do 1º semestre de DSM da FATEC ZL — 2026/2.
+A BYTE é uma assistência técnica de celulares especializada em manutenção e venda de aparelhos seminovos.
+
+O projeto tem como objetivo desenvolver um site para apresentar seus serviços, divulgar os aparelhos disponíveis para venda e disponibilizar informações sobre garantias e processos de atendimento.
 
 ## 👥 Equipe
 
