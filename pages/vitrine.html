@@ -1,18 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VITRINE</title>
+    <title>Vitrine - BYTE</title>
     <link rel="stylesheet" href="../css/vitrine.css" />
   </head>
-<body>
-    <div id="hero"></div>
-    <div id="celulares"></div>
-    <div id="infos"></div>
-    <div id="duvida"></div>
-    <div id="footer"></div>
-
+  <body>
     <header class="dflex">
       <div
         class="container dflex"
@@ -39,5 +33,82 @@
         </nav>
       </div>
     </header>
-</body>
+    <main>
+      <div id="hero">
+        <img src="../images/tecnico-de-reparo.avif" alt="" />
+        <div id="hero-infos">
+          <p id="hi-titulo">Cada detalhe passa pelo nosso laboratório</p>
+          <p id="hi-subtitulo">
+            Nosso protocolo combina testes técnicos, inspeção estética e
+            validação documental antes de qualquer aparelho chegar à vitrine.
+          </p>
+          <div id="lista-infos">
+            <ul id="lista-hero">
+              <li>Câmeras, sensores e biometria</li>
+              <li>Áudio, microfone e conectividade</li>
+              <li>Estrutura, botões e vedação</li>
+              <li>Tela, touch e brilho</li>
+              <li>Saúde da bateria e carregamento</li>
+              <li>IMEI, bloqueios e procedência</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="vitrine">
+        <div id="vitrine-textos">
+          <div>
+            <p id="v-titulo">Encontre seu próximo celular</p>
+            <p id="v-subtitulo">
+              Aparelhos revisados, higienizados e prontos para uma nova
+              história.
+            </p>
+          </div>
+          <span id="quantidade-aparelhos">13 aparelhos disponíveis</span>
+        </div>
+        <div id="pesquisa-vitrine">
+          <input
+            type="search"
+            id="p-busca"
+            placeholder="Busque por modelo, marca ou armazenamento"
+          />
+
+          <select id="s-marca">
+            <option value="" selected disabled>Marca</option>
+            <option value="samsung">Samsung</option>
+            <option value="motorola">Motorola</option>
+            <option value="apple">Apple</option>
+          </select>
+
+          <select id="s-armazenamento">
+            <option value="" selected disabled>Armazenamento</option>
+            <option value="64gb">64 GB</option>
+            <option value="128gb">128 GB</option>
+            <option value="256gb">256 GB</option>
+            <option value="512gb">512 GB</option>
+          </select>
+
+          <select id="s-condicao">
+            <option value="" selected disabled>Condição</option>
+            <option value="novo">Novo</option>
+            <option value="seminovo">Seminovo</option>
+            <option value="usado">Usado</option>
+          </select>
+        </div>
+        <div id="cards-vitrine">
+          <article class="card-aparelho">
+            <img src=""" alt="" />
+            <h3>iPhone 13</h3>
+            <p>128 GB</p>
+            <p>Meia-noite</p>
+            <p>BATERIA 92%</p>
+            <p>GARANTIA 90 dias</p>
+            <button type="button">Ver aparelho</button>
+          </article>
+        </div>
+      </div>
+      <div id="infos"></div>
+      <div id="duvida"></div>
+      <div id="footer"></div>
+    </main>
+  </body>
 </html>
