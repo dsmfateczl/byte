@@ -1,16 +1,24 @@
-# Byte
+## 🌐 Sobre o Projeto
 
 A BYTE é uma assistência técnica de celulares especializada em manutenção e venda de aparelhos seminovos.
 
 O projeto tem como objetivo desenvolver um site para apresentar seus serviços, divulgar os aparelhos disponíveis para venda e disponibilizar informações sobre garantias e processos de atendimento.
 
-## 👥 Equipe
+## 👥 Equipe e Responsabilidades
 
-- Alexandre
-- Gustavo Karl
-- Gustavo Oliveira
-- João Victor
-- Renan
+- Alexandre dos Santos Carvalho | Desenvolvimento das telas de Garantia e FAQ.
+- Gustavo Karl de Almeida Ribeiro | Desenvolvimento das telas Processos e Vitrine.
+- Gustavo de Oliveira Pires | Desenvolvimento da tela Sobre a Empresa.
+- João Victor Novo dos Santos | Desenvolvimento das telas Home e Serviços.
+- Renan Popp da Rocha | Desenvolvimento do Questionário de Pré-orçamento e integração com WhatsApp.
+
+## 🛠️ Tecnologias utilizadas
+
+- HTML5 — Estruturação das páginas.
+- CSS3 — Estilização e responsividade.
+- JavaScript — Implementação de funcionalidades e interatividade.
+- Git e GitHub — Controle de versão e colaboração entre os integrantes.
+- GitHub Pages — Hospedagem do site.
 
 ## 💻 Configuração do projeto
 
