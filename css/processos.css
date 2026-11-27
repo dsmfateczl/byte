@@ -39,6 +39,11 @@ header {
   width: 100%;
 }
 
+.p-header-inner {
+  justify-content: space-between;
+  width: 100%;
+}
+
 .logo {
   width: auto;
   height: 50px;
@@ -55,11 +60,54 @@ ul {
   gap: 80px;
 }
 
+.menu-links > li {
+  position: relative;
+}
+
 .menu-links a {
   text-decoration: none;
   color: black;
   padding: 10px;
   font-weight: bold;
+  display: block;
+}
+
+/* === MENU DROPDOWN (SERVIÇOS) === */
+.menu-links .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f1f1f1;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  padding: 5px 0;
+  list-style: none;
+  border-radius: 4px;
+}
+
+.menu-links > li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  list-style: none;
+}
+
+.submenu li a {
+  padding: 12px 16px;
+  color: black;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #e0e0e0;
+  color: #000000;
 }
 
 main {
@@ -307,7 +355,7 @@ footer #lista-footer-pp li {
 }
 
 .item-destaque-lista-pp {
-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 footer #p-footer-bottom {

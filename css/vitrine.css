@@ -39,6 +39,11 @@ header {
   width: 100%;
 }
 
+.v-header-inner {
+  justify-content: space-between;
+  width: 100%;
+}
+
 .logo {
   width: auto;
   height: 50px;
@@ -55,96 +60,119 @@ ul {
   gap: 80px;
 }
 
+.menu-links > li {
+  position: relative;
+}
+
 .menu-links a {
   text-decoration: none;
   color: black;
   padding: 10px;
   font-weight: bold;
+  display: block;
+}
+
+/* === MENU DROPDOWN (SERVIÇOS) === */
+.menu-links .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f1f1f1;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  padding: 5px 0;
+  list-style: none;
+  border-radius: 4px;
+}
+
+.menu-links > li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  list-style: none;
+}
+
+.submenu li a {
+  padding: 12px 16px;
+  color: black;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #e0e0e0;
+  color: #000000;
 }
 
 main {
   width: 100%;
-  height: calc(100vh - 60px);
-  background-color: #000000;
-}
-
-#hero {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 70px;
-  height: 650px;
-  background-color: #060608;
-}
-
-#hero img {
-  width: 570px;
-  height: 520px;
-  border-radius: 22px;
-}
-
-#hero-infos {
-  margin-top: 80px;
-}
-
-#hi-titulo,
-#v-titulo {
-  color: #f7f5fa;
-  font-size: 40px;
-}
-
-#hi-subtitulo,
-#v-subtitulo {
-  color: #a8a4b2;
-  font-size: 18px;
-  padding-top: 10px;
-}
-
-#lista-hero {
-  color: #f7f5fa;
-  font-size: 13px;
-  padding-top: 10px;
+  background-color: #0d0d12;
+  min-height: calc(100vh - 60px);
 }
 
 #vitrine {
-  background-color: #0d0d12;
-  padding: 20px 70px;
+  padding-top: 48px;
+  padding-bottom: 64px;
 }
 
 #vitrine-textos {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#v-titulo {
+  color: #f7f5fa;
+  font-size: 36px;
+  line-height: 1.15;
+}
+
+#v-subtitulo {
+  color: #a8a4b2;
+  font-size: 17px;
+  padding-top: 8px;
 }
 
 #quantidade-aparelhos {
   color: #a8a4b2;
-  font-size: 13px;
-  align-self: flex-end;
+  font-size: 14px;
+}
+
+#protocolo {
+  color: #a8a4b2;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 70ch;
+  margin-top: 20px;
+  padding-left: 14px;
+  border-left: 3px solid #8a00ff;
 }
 
 #pesquisa-vitrine {
   display: flex;
   align-items: stretch;
+  flex-wrap: wrap;
   gap: 12px;
-  width: 100%;
-  height: 50px;
+  margin-top: 32px;
 }
 
 #p-busca {
-  flex: 1;
+  flex: 1 1 280px;
   min-width: 0;
-}
-
-#pesquisa-vitrine select {
-  flex: 0 0 auto;
-  width: auto;
-  min-width: 0;
-  cursor: pointer;
 }
 
 #pesquisa-vitrine input,
 #pesquisa-vitrine select {
-  box-sizing: border-box;
-  padding: 0 12px;
+  height: 48px;
+  padding: 0 14px;
   border: 1px solid #2a2832;
   border-radius: 8px;
   background-color: #121219;
@@ -152,16 +180,29 @@ main {
   font-size: 14px;
 }
 
+#pesquisa-vitrine select {
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+#pesquisa-vitrine input:focus-visible,
+#pesquisa-vitrine select:focus-visible,
+.card-aparelho button:focus-visible {
+  outline: 2px solid #b366ff;
+  outline-offset: 2px;
+}
+
 #cards-vitrine {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 .card-aparelho {
   display: flex;
   flex-direction: column;
+  gap: 16px;
   background-color: #1d1d21;
   color: #ffffff;
   border: 1px solid #333338;
@@ -170,20 +211,44 @@ main {
   min-width: 0;
 }
 
-.card-aparelho img {
-  width: 100%;
+.card-foto {
   height: 180px;
-  object-fit: contain;
-  margin-bottom: 12px;
+  border-radius: 8px;
+  background-color: #121219;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.card-aparelho h3 {
+.card-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card-corpo h3 {
   font-size: 20px;
 }
 
-.card-aparelho p {
+.card-detalhe {
   font-size: 13px;
   color: #a8a4b2;
+  margin-top: 4px;
+}
+
+.card-selos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.card-selos li {
+  font-size: 12px;
+  color: #d9c2f5;
+  background-color: #2a1d3d;
+  border-radius: 999px;
+  padding: 4px 10px;
 }
 
 .card-aparelho button {
@@ -196,4 +261,23 @@ main {
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.card-aparelho button:hover {
+  background-color: #7000d1;
+}
+
+@media (max-width: 900px) {
+  .menu-links {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  #v-titulo {
+    font-size: 28px;
+  }
+  #pesquisa-vitrine select {
+    flex: 1 1 100%;
+  }
 }

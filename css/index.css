@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.centralizar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dflex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+header {
+  background-color: #f1f1f1;
+  height: 60px;
+  width: 100%;
+}
+
+.index-header-inner {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  width: auto;
+  height: 50px;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.menu-links > li {
+  position: relative;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+  display: block;
+}
+
+/* === MENU DROPDOWN (SERVIÇOS) === */
+.menu-links .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f1f1f1;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  padding: 5px 0;
+  list-style: none;
+  border-radius: 4px;
+}
+
+.menu-links > li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  list-style: none;
+}
+
+.submenu li a {
+  padding: 12px 16px;
+  color: black;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #e0e0e0;
+  color: #000000;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color: #000000;
+}
+
+/* === TELA INICIAL === */
+.index-container {
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.hero-textos {
+  max-width: 550px;
+}
+
+.hero-tag {
+  color: #a855f7;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hero-titulo {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-subtitulo {
+  color: #b3b3b3;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn-whatsapp-orcamento {
+  background-color: #a855f7;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn-whatsapp-orcamento:hover {
+  background-color: #9333ea;
+}

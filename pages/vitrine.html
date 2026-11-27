@@ -8,10 +8,7 @@
   </head>
   <body>
     <header class="dflex">
-      <div
-        class="container dflex"
-        style="justify-content: space-between; width: 100%"
-      >
+      <div class="container dflex v-header-inner">
         <div class="logo-container">
           <a href="../index.html">
             <img
@@ -23,7 +20,16 @@
         </div>
         <nav>
           <ul class="menu-links">
-            <li><a href="servicos.html">Serviços</a></li>
+            <li>
+              <a href="servicos.html">Serviços</a>
+              <ul class="submenu">
+                <li><a href="servicos.html#tela">Troca de Tela</a></li>
+                <li><a href="servicos.html#bateria">Substituição de Bateria</a></li>
+                <li><a href="servicos.html#conector">Reparo em Conectores</a></li>
+                <li><a href="servicos.html#oxidacao">Recuperação de Aparelhos Molhados</a></li>
+                <li><a href="servicos.html#tampa">Troca de tampa traseira</a></li>
+              </ul>
+            </li>
             <li><a href="garantia.html">Garantia</a></li>
             <li><a href="processos.html">Processos</a></li>
             <li><a href="sobre.html">Sobre a empresa</a></li>
@@ -34,52 +40,40 @@
       </div>
     </header>
     <main>
-      <div id="hero">
-        <img src="../images/tecnico-de-reparo.avif" alt="" />
-        <div id="hero-infos">
-          <p id="hi-titulo">Cada detalhe passa pelo nosso laboratório</p>
-          <p id="hi-subtitulo">
-            Nosso protocolo combina testes técnicos, inspeção estética e
-            validação documental antes de qualquer aparelho chegar à vitrine.
-          </p>
-          <div id="lista-infos">
-            <ul id="lista-hero">
-              <li>Câmeras, sensores e biometria</li>
-              <li>Áudio, microfone e conectividade</li>
-              <li>Estrutura, botões e vedação</li>
-              <li>Tela, touch e brilho</li>
-              <li>Saúde da bateria e carregamento</li>
-              <li>IMEI, bloqueios e procedência</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div id="vitrine">
+      <section id="vitrine" class="container">
         <div id="vitrine-textos">
           <div>
-            <p id="v-titulo">Encontre seu próximo celular</p>
+            <h1 id="v-titulo">Encontre seu próximo celular</h1>
             <p id="v-subtitulo">
               Aparelhos revisados, higienizados e prontos para uma nova
               história.
             </p>
           </div>
-          <span id="quantidade-aparelhos">13 aparelhos disponíveis</span>
+          <span id="quantidade-aparelhos">1 aparelho disponível</span>
         </div>
+
+        <p id="protocolo">
+          Todo aparelho passa pelo nosso laboratório antes de chegar aqui:
+          câmeras e biometria, áudio e conectividade, estrutura e botões,
+          tela e touch, bateria e carregamento, IMEI e procedência.
+        </p>
+
         <div id="pesquisa-vitrine">
           <input
             type="search"
             id="p-busca"
             placeholder="Busque por modelo, marca ou armazenamento"
+            aria-label="Buscar aparelho"
           />
 
-          <select id="s-marca">
+          <select id="s-marca" aria-label="Marca">
             <option value="" selected disabled>Marca</option>
             <option value="samsung">Samsung</option>
             <option value="motorola">Motorola</option>
             <option value="apple">Apple</option>
           </select>
 
-          <select id="s-armazenamento">
+          <select id="s-armazenamento" aria-label="Armazenamento">
             <option value="" selected disabled>Armazenamento</option>
             <option value="64gb">64 GB</option>
             <option value="128gb">128 GB</option>
@@ -87,25 +81,31 @@
             <option value="512gb">512 GB</option>
           </select>
 
-          <select id="s-condicao">
+          <select id="s-condicao" aria-label="Condição">
             <option value="" selected disabled>Condição</option>
             <option value="novo">Novo</option>
             <option value="seminovo">Seminovo</option>
             <option value="usado">Usado</option>
           </select>
         </div>
+
         <div id="cards-vitrine">
-          <article class="card-aparelho">
-            <img src=""" alt="" />
-            <h3>iPhone 13</h3>
-            <p>128 GB</p>
-            <p>Meia-noite</p>
-            <p>BATERIA 92%</p>
-            <p>GARANTIA 90 dias</p>
-            <button type="button">Ver aparelho</button>
-          </article>
+            <article class="card-aparelho">
+              <div class="card-foto">
+                <!-- Troque pela foto: <img src="../images/iphone13.png" alt="iPhone 13 Meia-noite" /> -->
+              </div>
+              <div class="card-corpo">
+                <h3>iPhone 13</h3>
+                <p class="card-detalhe">128 GB · Meia-noite</p>
+                <ul class="card-selos">
+                  <li>Bateria 92%</li>
+                  <li>Garantia 90 dias</li>
+                </ul>
+              </div>
+              <button type="button">Ver aparelho</button>
+            </article>
         </div>
-      </div>
+      </section>
       <div id="infos"></div>
       <div id="duvida"></div>
       <div id="footer"></div>
