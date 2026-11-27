@@ -16,7 +16,6 @@ O projeto tem como objetivo desenvolver um site para apresentar seus serviços, 
 
 - HTML5 — Estruturação das páginas.
 - CSS3 — Estilização e responsividade.
-- JavaScript — Implementação de funcionalidades e interatividade.
 - Git e GitHub — Controle de versão e colaboração entre os integrantes.
 - GitHub Pages — Hospedagem do site.
 
