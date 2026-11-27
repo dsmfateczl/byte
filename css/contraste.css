@@ -1,0 +1,104 @@
+/* === BOTÃO DE ALTO CONTRASTE (aparece em todas as páginas) === */
+.btn-contraste {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2000;
+  padding: 12px 18px;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+  background-color: #8a00ff;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.btn-contraste:hover {
+  background-color: #7000d1;
+}
+
+.btn-contraste:focus-visible {
+  outline: 3px solid #ffff00;
+  outline-offset: 3px;
+}
+
+/* === MODO ALTO CONTRASTE === */
+/* Fundo preto, texto branco, links e destaques em amarelo */
+html.alto-contraste *,
+html.alto-contraste *::before,
+html.alto-contraste *::after {
+  background-color: #000000 !important;
+  background-image: none !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+/* Links */
+html.alto-contraste a,
+html.alto-contraste a * {
+  color: #ffff00 !important;
+  text-decoration: underline !important;
+}
+
+/* Títulos */
+html.alto-contraste h1,
+html.alto-contraste h2,
+html.alto-contraste h3,
+html.alto-contraste h4 {
+  color: #ffffff !important;
+}
+
+/* Botões e campos de formulário */
+html.alto-contraste button,
+html.alto-contraste input,
+html.alto-contraste select,
+html.alto-contraste textarea {
+  border: 2px solid #ffffff !important;
+}
+
+html.alto-contraste button {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+}
+
+html.alto-contraste button:hover {
+  background-color: #ffffff !important;
+}
+
+/* Cards e caixas ganham borda para continuarem visíveis sobre o fundo preto */
+html.alto-contraste article,
+html.alto-contraste section[class],
+html.alto-contraste li[class],
+html.alto-contraste .submenu {
+  border: 2px solid #ffffff !important;
+}
+
+/* Ícones SVG e linhas divisórias */
+html.alto-contraste svg,
+html.alto-contraste svg * {
+  stroke: #ffff00 !important;
+  fill: none !important;
+  background: transparent !important;
+}
+
+html.alto-contraste hr {
+  border-top: 2px solid #ffffff !important;
+}
+
+/* Foco visível para quem navega pelo teclado */
+html.alto-contraste *:focus-visible {
+  outline: 3px solid #ffff00 !important;
+  outline-offset: 3px;
+}
+
+/* O botão continua destacado no modo alto contraste */
+html.alto-contraste .btn-contraste {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+  border: 3px solid #ffffff !important;
+}

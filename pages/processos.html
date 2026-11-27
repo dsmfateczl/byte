@@ -9,7 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-  </head>
+      <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/contraste.css" />
+    <script src="../js/contraste.js"></script>
+</head>
   <body>
     <!-- CABEÇALHO -->
     <header class="dflex">
@@ -174,32 +177,50 @@
         </section>
       </div>
     </main>
-    <footer id="footer-pp">
-      <div id="p-footer-top">
-        <div id="p-footer-top-esquerda">
-        <img class="logo-footer" src="../images/atumalak2.png" alt="Logo"/>
-        <p>
-          BYTE Assistência Técnica - Líder em reparos rápidos de smartphones com
-          peças de procedência selecionada e garantia assegurada.
-        </p>
+  
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-marca">
+          <img class="logo-footer" src="../images/atumalak2.png" alt="Logotipo BYTE" />
+          <p>
+            Reparos de smartphones com peças de procedência, atendimento
+            transparente e garantia de 90 dias.
+          </p>
         </div>
-        <div id="lista-footer-pp">
-        <ul>
-          <li class="item-destaque-lista-pp">Navegação</li>
-          <li>Serviços</li>
-          <li>Garantia</li>
-          <li>Processos</li>
-        </ul>
-        <ul>
-          <li class="item-destaque-lista-pp">Suporte e Contato</li>
-          <li>Vitrine</li>
-          <li>FAQ</li>
-          <li>Fale Conosco</li>
-          <li>Política de Privacidade</li>
-        </ul>
+
+        <nav class="footer-coluna" aria-label="Navegação do rodapé">
+          <h2>Navegação</h2>
+          <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="garantia.html">Garantia</a></li>
+            <li><a href="processos.html">Processos</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-coluna" aria-label="Mais informações">
+          <h2>Mais</h2>
+          <ul>
+            <li><a href="sobre.html">Sobre a empresa</a></li>
+            <li><a href="vitrine.html">Vitrine</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-coluna">
+          <h2>Contato</h2>
+          <p class="footer-contato-texto">Peça seu orçamento direto pelo WhatsApp.</p>
+          <a
+            class="footer-whatsapp"
+            href="https://wa.me/5511919523289?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20BYTE%20Assist%C3%AAncia%20T%C3%A9cnica%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+            target="_blank"
+            rel="noopener noreferrer"
+            >Falar no WhatsApp</a
+          >
         </div>
       </div>
-      <div id="p-footer-bottom">
+
+      <div class="footer-base">
         <p>© 2026 BYTE Assistência Técnica. Todos os direitos reservados.</p>
         <p>Desenvolvido com foco em alto desempenho.</p>
       </div>

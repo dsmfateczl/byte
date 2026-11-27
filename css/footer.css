@@ -1,0 +1,136 @@
+/* === RODAPÉ ÚNICO DO SITE (usado em todas as páginas) === */
+.site-footer {
+  width: 100%;
+  background-color: #0b0b0f;
+  color: #a1a1aa;
+  font-family: Arial, sans-serif;
+  border-top: 3px solid #8a00ff;
+}
+
+.site-footer *,
+.site-footer *::before,
+.site-footer *::after {
+  box-sizing: border-box;
+}
+
+.site-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer h2,
+.site-footer p {
+  margin: 0;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 20px 36px;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+  gap: 40px;
+}
+
+.logo-footer {
+  display: block;
+  height: 56px;
+  width: auto;
+  filter: invert(1); /* logo preta vira branca no fundo escuro */
+  margin-bottom: 16px;
+}
+
+.footer-marca p {
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 34ch;
+}
+
+.footer-coluna h2 {
+  color: #f7f5fa;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.footer-coluna li + li {
+  margin-top: 10px;
+}
+
+.footer-coluna a {
+  color: #a1a1aa;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-coluna a:hover {
+  color: #b366ff;
+}
+
+.footer-contato-texto {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.footer-coluna .footer-whatsapp {
+  display: inline-block;
+  background-color: #8a00ff;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 11px 20px;
+  border-radius: 8px;
+}
+
+.footer-coluna .footer-whatsapp:hover {
+  background-color: #7000d1;
+  color: #ffffff;
+}
+
+.site-footer a:focus-visible {
+  outline: 2px solid #b366ff;
+  outline-offset: 3px;
+}
+
+.footer-base {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-top: 1px solid #25252d;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+/* === ALTO CONTRASTE === */
+html.alto-contraste .site-footer {
+  border-top: 3px solid #ffff00 !important;
+}
+
+html.alto-contraste .logo-footer {
+  filter: none !important; /* a logo já vira amarela pelo contraste.js */
+}
+
+html.alto-contraste .footer-coluna .footer-whatsapp {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+}
+
+html.alto-contraste .footer-base {
+  border-top: 2px solid #ffffff !important;
+}

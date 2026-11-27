@@ -11,7 +11,6 @@ html {
 body {
   font-family: Arial, sans-serif;
   background-color: #060608;
-  color: #ffffff;
 }
 
 .dflex {
@@ -28,9 +27,15 @@ body {
   padding-right: 20px;
 }
 
+/* === CABEÇALHO (igual às outras páginas) === */
 header {
   background-color: #f1f1f1;
   height: 60px;
+  width: 100%;
+}
+
+.s-header-inner {
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -63,7 +68,7 @@ ul {
 }
 
 .menu-links .submenu {
-  display: none ;
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -77,11 +82,7 @@ ul {
 }
 
 .menu-links > li:hover .submenu {
-  display: block ;
-}
-
-.submenu li {
-  list-style: none ;
+  display: block;
 }
 
 .submenu li a {
@@ -91,69 +92,192 @@ ul {
   font-size: 14px;
   font-weight: normal;
   white-space: nowrap;
-  text-decoration: none;
 }
 
 .submenu li a:hover {
   background-color: #e0e0e0;
-  color: #000000;
 }
 
+/* === PÁGINA SERVIÇOS === */
 #s-main {
-  width: 100%;
+  background-color: #0d0d12;
+  padding: 56px 0 72px;
   min-height: calc(100vh - 60px);
-  padding: 60px 0;
-  background-color: #060608;
 }
 
 .s-topo {
-  max-width: 700px;
-  margin-bottom: 50px;
+  max-width: 760px;
+  margin-bottom: 48px;
 }
 
 .s-tag {
-  color: #a855f7;
+  display: inline-block;
+  color: #b366ff;
+  font-size: 13px;
   font-weight: bold;
-  letter-spacing: 2px;
-  display: block;
-  margin-bottom: 10px;
-  font-size: 14px;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
 }
 
 .s-topo h1 {
+  color: #f7f5fa;
   font-size: 40px;
-  font-weight: 800;
-  margin-bottom: 15px;
-  color: #ffffff;
+  line-height: 1.15;
 }
 
 .s-topo p {
-  color: #b3b3b3;
-  font-size: 16px;
+  color: #a8a4b2;
+  font-size: 18px;
   line-height: 1.6;
+  margin-top: 14px;
 }
 
 .s-grid {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 32px;
+}
+
+/* Grade: 3 cards em cima e 2 maiores embaixo */
+.s-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
 }
 
 .s-card {
-  background-color: #111116;
-  border: 1px solid #2a2832;
-  border-radius: 14px;
-  padding: 30px;
+  grid-column: span 2;
+  display: flex;
+  background-color: #1d1d21;
+  border: 1px solid #333338;
+  border-top: 4px solid #8a00ff;
+  border-radius: 16px;
+  scroll-margin-top: 24px;
 }
 
-.s-card h2 {
-  font-size: 22px;
-  color: #ffffff;
+.s-card:nth-child(n + 4) {
+  grid-column: span 3;
+}
+
+.s-card:target {
+  border-color: #b366ff;
+}
+
+.s-conteudo {
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.s-numero {
+  color: #b366ff;
+  font-size: 38px;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 1px;
   margin-bottom: 12px;
 }
 
-.s-card p {
-  color: #b3b3b3;
+.s-conteudo h2 {
+  color: #f7f5fa;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.s-conteudo p {
+  color: #c9c5d3;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 14px;
+}
+
+.s-conteudo h3 {
+  color: #f7f5fa;
   font-size: 15px;
-  line-height: 1.6;
+  margin-top: 22px;
+}
+
+.s-indicacoes {
+  margin-top: 10px;
+}
+
+.s-indicacoes li {
+  color: #a8a4b2;
+  font-size: 15px;
+  line-height: 1.5;
+  padding-left: 22px;
+  position: relative;
+  margin-top: 6px;
+}
+
+.s-indicacoes li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #8a00ff;
+}
+
+.s-rodape-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 28px;
+}
+
+.s-selo {
+  font-size: 13px;
+  color: #d9c2f5;
+  background-color: #2a1d3d;
+  border-radius: 999px;
+  padding: 6px 14px;
+}
+
+.s-botao {
+  background-color: #8a00ff;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 22px;
+  border-radius: 8px;
+}
+
+.s-botao:hover {
+  background-color: #7000d1;
+}
+
+.s-botao:focus-visible {
+  outline: 2px solid #b366ff;
+  outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+  .menu-links {
+    gap: 24px;
+  }
+
+  .s-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .s-card,
+  .s-card:nth-child(n + 4) {
+    grid-column: auto;
+  }
+
+  .s-conteudo {
+    padding: 24px;
+  }
+
+  .s-topo h1 {
+    font-size: 30px;
+  }
 }
