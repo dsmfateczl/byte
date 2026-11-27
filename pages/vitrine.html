@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="pt-BR">
   <head>
@@ -39,8 +40,33 @@
         </nav>
       </div>
     </header>
+
     <main>
-      <section id="vitrine" class="container">
+      <div id="hero">
+        <img src="../images/aparelhos.webp" alt="Técnico realizando reparo de celular" />
+
+        <div id="hero-infos">
+          <p id="hi-titulo">Cada detalhe passa pelo nosso laboratório</p>
+
+          <p id="hi-subtitulo">
+            Nosso protocolo combina testes técnicos, inspeção estética e
+            validação documental antes de qualquer aparelho chegar à vitrine.
+          </p>
+
+          <div id="lista-infos">
+            <ul id="lista-hero">
+              <li>Câmeras, sensores e biometria</li>
+              <li>Áudio, microfone e conectividade</li>
+              <li>Estrutura, botões e vedação</li>
+              <li>Tela, touch e brilho</li>
+              <li>Saúde da bateria e carregamento</li>
+              <li>IMEI, bloqueios e procedência</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section id="vitrine">
         <div id="vitrine-textos">
           <div>
             <h1 id="v-titulo">Encontre seu próximo celular</h1>
@@ -49,14 +75,9 @@
               história.
             </p>
           </div>
-          <span id="quantidade-aparelhos">1 aparelho disponível</span>
-        </div>
 
-        <p id="protocolo">
-          Todo aparelho passa pelo nosso laboratório antes de chegar aqui:
-          câmeras e biometria, áudio e conectividade, estrutura e botões,
-          tela e touch, bateria e carregamento, IMEI e procedência.
-        </p>
+          <span id="quantidade-aparelhos">13 aparelhos disponíveis</span>
+        </div>
 
         <div id="pesquisa-vitrine">
           <input
@@ -90,25 +111,245 @@
         </div>
 
         <div id="cards-vitrine">
-            <article class="card-aparelho">
-              <div class="card-foto">
-                <!-- Troque pela foto: <img src="../images/iphone13.png" alt="iPhone 13 Meia-noite" /> -->
+
+          <article class="card-aparelho">
+            <div class="card-imagem">
+              <img src="../images/iphone-15-pro.jpg" alt="iPhone 15 Pro" />
+            </div>
+
+            <div class="card-conteudo">
+              <h3>iPhone 15 Pro</h3>
+              <p class="card-descricao">256 GB • Titânio natural</p>
+
+              <div class="card-detalhes">
+                <div>
+                  <span>Bateria</span>
+                  <strong>92%</strong>
+                </div>
+
+                <div>
+                  <span>Garantia</span>
+                  <strong>90 dias</strong>
+                </div>
               </div>
-              <div class="card-corpo">
-                <h3>iPhone 13</h3>
-                <p class="card-detalhe">128 GB · Meia-noite</p>
-                <ul class="card-selos">
-                  <li>Bateria 92%</li>
-                  <li>Garantia 90 dias</li>
-                </ul>
+
+              <button type="button" aria-label="Ver iPhone 15 Pro">
+                <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="card-aparelho">
+            <div class="card-imagem">
+              <img src="../images/galaxy-s24-ultra.webp" alt="Galaxy S24 Ultra" />
+            </div>
+
+            <div class="card-conteudo">
+              <h3>Galaxy S24 Ultra</h3>
+              <p class="card-descricao">512 GB • Titânio preto</p>
+
+              <div class="card-detalhes">
+                <div>
+                  <span>Bateria</span>
+                  <strong>96%</strong>
+                </div>
+
+                <div>
+                  <span>Garantia</span>
+                  <strong>90 dias</strong>
+                </div>
               </div>
-              <button type="button">Ver aparelho</button>
-            </article>
+
+              <button type="button" aria-label="Ver Galaxy S24 Ultra">
+                <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="card-aparelho">
+            <div class="card-imagem">
+              <img src="../images/iphone-14.jpg" alt="iPhone 14" />
+            </div>
+
+            <div class="card-conteudo">
+              <h3>iPhone 14</h3>
+              <p class="card-descricao">128 GB • Meia-noite</p>
+
+              <div class="card-detalhes">
+                <div>
+                  <span>Bateria</span>
+                  <strong>88%</strong>
+                </div>
+
+                <div>
+                  <span>Garantia</span>
+                  <strong>90 dias</strong>
+                </div>
+              </div>
+
+              <button type="button" aria-label="Ver iPhone 14">
+                <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="card-aparelho">
+            <div class="card-imagem">
+              <img src="../images/galaxy-z-flip.avif" alt="Galaxy Z Flip5" />
+            </div>
+
+            <div class="card-conteudo">
+              <h3>Galaxy Z Flip5</h3>
+              <p class="card-descricao">256 GB • Lavanda</p>
+
+              <div class="card-detalhes">
+                <div>
+                  <span>Bateria</span>
+                  <strong>93%</strong>
+                </div>
+
+                <div>
+                  <span>Garantia</span>
+                  <strong>90 dias</strong>
+                </div>
+              </div>
+
+              <button type="button" aria-label="Ver Galaxy Z Flip5">
+                <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="card-aparelho">
+            <div class="card-imagem">
+              <img src="../images/iphone-13.avif" alt="iPhone 13" />
+            </div>
+
+            <div class="card-conteudo">
+              <h3>iPhone 13</h3>
+              <p class="card-descricao">128 GB • Meia-noite</p>
+
+              <div class="card-detalhes">
+                <div>
+                  <span>Bateria</span>
+                  <strong>92%</strong>
+                </div>
+
+                <div>
+                  <span>Garantia</span>
+                  <strong>90 dias</strong>
+                </div>
+              </div>
+
+              <button type="button" aria-label="Ver iPhone 13">
+                <span>→</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <div id="mais-aparelhos">
+          <button type="button">
+            Ver mais aparelhos <span>↗</span>
+          </button>
         </div>
       </section>
-      <div id="infos"></div>
-      <div id="duvida"></div>
-      <div id="footer"></div>
+
+      <section id="infos">
+        <div class="infos-container">
+          <div class="infos-titulo">
+            <h2>Seminovo, sem insegurança</h2>
+            <p>
+              A tranquilidade de comprar com quem entende de reparo e revisão
+              detalhada.
+            </p>
+          </div>
+
+          <div id="cards-infos">
+            <article class="card-info">
+              <div class="icone-info">✓</div>
+              <h3>Garantia em cada negócio</h3>
+              <p>
+                Seu aparelho acompanhado de garantia.
+              </p>
+            </article>
+
+            <article class="card-info">
+              <div class="icone-info">✓</div>
+              <h3>Bateria aprovada</h3>
+              <p>
+                Capacidade mínima de 85% e teste de carga.
+              </p>
+            </article>
+
+            <article class="card-info">
+              <div class="icone-info">✓</div>
+              <h3>Procedência verificada</h3>
+              <p>
+                IMEI consultado e histórico transparente.
+              </p>
+            </article>
+
+            <article class="card-info">
+              <div class="icone-info">✓</div>
+              <h3>Pronto para usar</h3>
+              <p>
+                Aparelhos revisados e higienizados.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="duvida">
+        <div class="duvida-container">
+          <div class="duvida-textos">
+            <h2>Ainda não encontrou o modelo ideal?</h2>
+            <p>
+              Entre em contato com nossa equipe e encontre o aparelho que
+              combina com você.
+            </p>
+          </div>
+
+          <a href="https://wa.me/5511999999999" class="btn-duvida">
+            Quero ser avisado
+          </a>
+        </div>
+      </section>
+
+      <footer id="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="../images/atumalak2.png" alt="Logotipo BYTE" />
+            <p>
+              BYTE Assistência Técnica - Seu aparelho em boas mãos.
+              Qualidade, confiança e tecnologia em um só lugar.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div>
+              <h4>Navegação</h4>
+              <a href="../telainicial.html">Home</a>
+              <a href="servicos.html">Serviços</a>
+              <a href="garantia.html">Garantia</a>
+              <a href="processos.html">Processos</a>
+            </div>
+
+            <div>
+              <h4>Suporte e Contato</h4>
+              <a href="sobre.html">Sobre nós</a>
+              <a href="faq.html">FAQ</a>
+              <a href="vitrine.html">Vitrine</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copy">
+          <p>© 2026 BYTE Assistência Técnica. Todos os direitos reservados.</p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
