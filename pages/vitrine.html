@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="pt-BR">
   <head>
@@ -9,9 +8,12 @@
   </head>
   <body>
     <header class="dflex">
-      <div class="container dflex v-header-inner">
+      <div
+        class="container dflex"
+        style="justify-content: space-between; width: 100%"
+      >
         <div class="logo-container">
-          <a href="../index.html">
+          <a href="../telainicial.html">
             <img
               class="logo"
               src="../images/atumalak2.png"
@@ -21,16 +23,7 @@
         </div>
         <nav>
           <ul class="menu-links">
-            <li>
-              <a href="servicos.html">Serviços</a>
-              <ul class="submenu">
-                <li><a href="servicos.html#tela">Troca de Tela</a></li>
-                <li><a href="servicos.html#bateria">Substituição de Bateria</a></li>
-                <li><a href="servicos.html#conector">Reparo em Conectores</a></li>
-                <li><a href="servicos.html#oxidacao">Recuperação de Aparelhos Molhados</a></li>
-                <li><a href="servicos.html#tampa">Troca de tampa traseira</a></li>
-              </ul>
-            </li>
+            <li><a href="servicos.html">Serviços</a></li>
             <li><a href="garantia.html">Garantia</a></li>
             <li><a href="processos.html">Processos</a></li>
             <li><a href="sobre.html">Sobre a empresa</a></li>
@@ -69,7 +62,7 @@
       <section id="vitrine">
         <div id="vitrine-textos">
           <div>
-            <h1 id="v-titulo">Encontre seu próximo celular</h1>
+            <p id="v-titulo">Encontre seu próximo celular</p>
             <p id="v-subtitulo">
               Aparelhos revisados, higienizados e prontos para uma nova
               história.
@@ -84,17 +77,16 @@
             type="search"
             id="p-busca"
             placeholder="Busque por modelo, marca ou armazenamento"
-            aria-label="Buscar aparelho"
           />
 
-          <select id="s-marca" aria-label="Marca">
+          <select id="s-marca">
             <option value="" selected disabled>Marca</option>
             <option value="samsung">Samsung</option>
             <option value="motorola">Motorola</option>
             <option value="apple">Apple</option>
           </select>
 
-          <select id="s-armazenamento" aria-label="Armazenamento">
+          <select id="s-armazenamento">
             <option value="" selected disabled>Armazenamento</option>
             <option value="64gb">64 GB</option>
             <option value="128gb">128 GB</option>
@@ -102,7 +94,7 @@
             <option value="512gb">512 GB</option>
           </select>
 
-          <select id="s-condicao" aria-label="Condição">
+          <select id="s-condicao">
             <option value="" selected disabled>Condição</option>
             <option value="novo">Novo</option>
             <option value="seminovo">Seminovo</option>
