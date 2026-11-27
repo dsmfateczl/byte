@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #060608;
+  color: #ffffff;
+}
+
+.dflex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header {
+  background-color: #f1f1f1;
+  height: 60px;
+  width: 100%;
+}
+
+.logo {
+  width: auto;
+  height: 50px;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.menu-links > li {
+  position: relative;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+  display: block;
+}
+
+.menu-links .submenu {
+  display: none ;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f1f1f1;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  padding: 5px 0;
+  list-style: none;
+  border-radius: 4px;
+}
+
+.menu-links > li:hover .submenu {
+  display: block ;
+}
+
+.submenu li {
+  list-style: none ;
+}
+
+.submenu li a {
+  padding: 12px 16px;
+  color: black;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #e0e0e0;
+  color: #000000;
+}
+
+#s-main {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  padding: 60px 0;
+  background-color: #060608;
+}
+
+.s-topo {
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.s-tag {
+  color: #a855f7;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.s-topo h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.s-topo p {
+  color: #b3b3b3;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.s-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.s-card {
+  background-color: #111116;
+  border: 1px solid #2a2832;
+  border-radius: 14px;
+  padding: 30px;
+}
+
+.s-card h2 {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.s-card p {
+  color: #b3b3b3;
+  font-size: 15px;
+  line-height: 1.6;
+}

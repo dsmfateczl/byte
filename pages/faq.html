@@ -4,14 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ - BYTE</title>
-    <link rel="stylesheet" href="../css/estilo.css" />
+    <link rel="stylesheet" href="../css/faq.css" />
   </head>
   <body>
     <header class="dflex">
-      <div
-        class="container dflex"
-        style="justify-content: space-between; width: 100%"
-      >
+      <div class="container dflex faq-header-inner">
         <div class="logo-container">
           <a href="../index.html">
             <img
@@ -23,7 +20,16 @@
         </div>
         <nav>
           <ul class="menu-links">
-            <li><a href="servicos.html">Serviços</a></li>
+            <li>
+              <a href="servicos.html">Serviços</a>
+              <ul class="submenu">
+                <li><a href="servicos.html#tela">Troca de Tela</a></li>
+                <li><a href="servicos.html#bateria">Substituição de Bateria</a></li>
+                <li><a href="servicos.html#conector">Reparo em Conectores</a></li>
+                <li><a href="servicos.html#oxidacao">Recuperação de Aparelhos Molhados</a></li>
+                <li><a href="servicos.html#tampa">Troca de tampa traseira</a></li>
+              </ul>
+            </li>
             <li><a href="garantia.html">Garantia</a></li>
             <li><a href="processos.html">Processos</a></li>
             <li><a href="sobre.html">Sobre a empresa</a></li>
@@ -35,49 +41,22 @@
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
-    <main class="centralizar" style="height: auto; padding: 60px 0">
-      <div
-        class="container"
-        style="color: white; font-family: Arial, sans-serif"
-      >
-        <div style="max-width: 750px; margin-bottom: 40px">
-          <span style="color: #a855f7; font-weight: bold; letter-spacing: 2px"
-            >PERGUNTAS FREQUENTES</span
-          >
-          <h1 style="font-size: 42px; font-weight: 800; margin: 15px 0">
-            Como podemos ajudar?
-          </h1>
-          <p style="color: #b3b3b3">
+    <main id="faq-main" class="centralizar">
+      <div class="container faq-container">
+        <div class="faq-topo">
+          <span class="faq-tag">PERGUNTAS FREQUENTES</span>
+          <h1 class="faq-titulo">Como podemos ajudar?</h1>
+          <p class="faq-subtitulo">
             Encontre respostas rápidas sobre atendimento, reparos, garantia e
             seminovos.
           </p>
         </div>
 
         <!-- Categorias, Perguntas e Respostas -->
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            max-width: 750px;
-          "
-        >
+        <div class="faq-categorias">
           <!-- CATEGORIA 1: ATENDIMENTO E SERVIÇOS -->
-          <section>
-            <h2
-              style="
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                color: #ffffff;
-                font-size: 18px;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                padding-bottom: 10px;
-                margin-bottom: 20px;
-                border-bottom: 1px solid rgba(168, 85, 247, 0.4);
-              "
-            >
+          <section class="faq-categoria">
+            <h2 class="faq-categoria-titulo">
               <svg
                 width="20"
                 height="20"
@@ -95,44 +74,42 @@
               Atendimento e Serviços
             </h2>
 
-            <div style="display: flex; flex-direction: column; gap: 25px">
-              <div>
-                <h3 style="color: #a855f7; margin-bottom: 5px">
-                  Como funciona o orçamento online?
-                </h3>
-                <p style="color: #b3b3b3; line-height: 1.6">
+            <div class="faq-lista-perguntas">
+              <div class="faq-item">
+                <h3 class="faq-pergunta">Como funciona o orçamento online?</h3>
+                <p class="faq-resposta">
                   Você pode solicitar um orçamento pelo nosso formulário ou
                   WhatsApp informando o modelo do aparelho e o problema. Em até 1
                   hora nossa equipe retorna com o valor estimado.
                 </p>
               </div>
 
-              <div>
-                <h3 style="color: #a855f7; margin-bottom: 5px">
+              <div class="faq-item">
+                <h3 class="faq-pergunta">
                   Quais são os prazos médios de reparo?
                 </h3>
-                <p style="color: #b3b3b3; line-height: 1.6">
+                <p class="faq-resposta">
                   A maioria dos reparos é concluída no mesmo dia, em até 2
                   horas. Casos mais complexos, como troca de placa, podem levar
                   de 1 a 3 dias úteis.
                 </p>
               </div>
 
-              <div>
-                <h3 style="color: #a855f7; margin-bottom: 5px">
+              <div class="faq-item">
+                <h3 class="faq-pergunta">
                   Preciso agendar para levar meu aparelho?
                 </h3>
-                <p style="color: #b3b3b3; line-height: 1.6">
+                <p class="faq-resposta">
                   Não é obrigatório, mas recomendamos o agendamento prévio para
                   garantir atendimento prioritário e reduzir o tempo de espera.
                 </p>
               </div>
 
-              <div>
-                <h3 style="color: #a855f7; margin-bottom: 5px">
+              <div class="faq-item">
+                <h3 class="faq-pergunta">
                   Quais marcas e aparelhos vocês consertam?
                 </h3>
-                <p style="color: #b3b3b3; line-height: 1.6">
+                <p class="faq-resposta">
                   Trabalhamos com as principais marcas do mercado (Apple,
                   Samsung, Motorola, Dell, Lenovo, etc.), atendendo
                   smartphones, notebooks, computadores e tablets.
@@ -142,21 +119,8 @@
           </section>
 
           <!-- CATEGORIA 2: SEGURANÇA E DADOS -->
-          <section>
-            <h2
-              style="
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                color: #ffffff;
-                font-size: 18px;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                padding-bottom: 10px;
-                margin-bottom: 20px;
-                border-bottom: 1px solid rgba(168, 85, 247, 0.4);
-              "
-            >
+          <section class="faq-categoria">
+            <h2 class="faq-categoria-titulo">
               <svg
                 width="20"
                 height="20"
@@ -172,24 +136,24 @@
               Segurança e Dados
             </h2>
 
-            <div style="display: flex; flex-direction: column; gap: 25px">
-              <div>
-                <h3 style="color: #a855f7; margin-bottom: 5px">
+            <div class="faq-lista-perguntas">
+              <div class="faq-item">
+                <h3 class="faq-pergunta">
                   Vou perder meus arquivos, fotos e aplicativos durante o
                   conserto?
                 </h3>
-                <p style="color: #b3b3b3; line-height: 1.6">
+                <p class="faq-resposta">
                   Na maioria dos reparos físicos (tela, bateria, conectores),
                   seus dados permanecem intactos. Porém, em casos de formatação
                   ou troca de placa, recomendamos fazer um backup prévio.
                 </p>
               </div>
 
-              <div>
-                <h3 style="color: #a855f7; margin-bottom: 5px">
+              <div class="faq-item">
+                <h3 class="faq-pergunta">
                   Meus dados pessoais estarão seguros durante o reparo?
                 </h3>
-                <p style="color: #b3b3b3; line-height: 1.6">
+                <p class="faq-resposta">
                   Sim. Seguimos protocolos rígidos de privacidade e a Lei Geral
                   de Proteção de Dados (LGPD). Nossos técnicos acessam o sistema
                   apenas para testar os componentes reparados.
@@ -199,21 +163,8 @@
           </section>
 
           <!-- CATEGORIA 3: GARANTIA E PAGAMENTO -->
-          <section>
-            <h2
-              style="
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                color: #ffffff;
-                font-size: 18px;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                padding-bottom: 10px;
-                margin-bottom: 20px;
-                border-bottom: 1px solid rgba(168, 85, 247, 0.4);
-              "
-            >
+          <section class="faq-categoria">
+            <h2 class="faq-categoria-titulo">
               <svg
                 width="20"
                 height="20"
@@ -230,33 +181,31 @@
               Garantia e Pagamento
             </h2>
 
-            <div style="display: flex; flex-direction: column; gap: 25px">
-              <div>
-                <h3 style="color: #a855f7; margin-bottom: 5px">
+            <div class="faq-lista-perguntas">
+              <div class="faq-item">
+                <h3 class="faq-pergunta">
                   Os serviços possuem garantia? Qual é o prazo?
                 </h3>
-                <p style="color: #b3b3b3; line-height: 1.6">
+                <p class="faq-resposta">
                   Sim, todos os nossos serviços possuem garantia legal de 90 dias
                   (3 meses) sobre a peça trocada e a mão de obra realizada.
                 </p>
               </div>
 
-              <div>
-                <h3 style="color: #a855f7; margin-bottom: 5px">
-                  O que a garantia não cobre?
-                </h3>
-                <p style="color: #b3b3b3; line-height: 1.6">
+              <div class="faq-item">
+                <h3 class="faq-pergunta">O que a garantia não cobre?</h3>
+                <p class="faq-resposta">
                   A garantia não cobre danos causados por mau uso após a entrega,
                   como quedas, telas trincadas, contato com líquidos ou abertura
                   do aparelho por terceiros.
                 </p>
               </div>
 
-              <div>
-                <h3 style="color: #a855f7; margin-bottom: 5px">
+              <div class="faq-item">
+                <h3 class="faq-pergunta">
                   Quais são as formas de pagamento aceitas?
                 </h3>
-                <p style="color: #b3b3b3; line-height: 1.6">
+                <p class="faq-resposta">
                   Aceitamos Pix, dinheiro, cartão de débito e cartão de crédito
                   com parcelamento em até 6x sem juros.
                 </p>

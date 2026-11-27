@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BYTE</title>
 
-    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header class="dflex">
-      <div
-        class="container dflex"
-        style="justify-content: space-between; width: 100%"
-      >
+      <div class="container dflex index-header-inner">
         <div class="logo-container">
           <a href="index.html">
             <img class="logo" src="images/atumalak2.png" alt="Logotipo BYTE" />
@@ -21,7 +18,16 @@
 
         <nav>
           <ul class="menu-links">
-            <li><a href="pages/servicos.html">Serviços</a></li>
+            <li>
+              <a href="pages/servicos.html">Serviços</a>
+              <ul class="submenu">
+                <li><a href="pages/servicos.html#tela">Troca de Tela</a></li>
+                <li><a href="pages/servicos.html#bateria">Substituição de Bateria</a></li>
+                <li><a href="pages/servicos.html#conector">Reparo em Conectores</a></li>
+                <li><a href="pages/servicos.html#oxidacao">Recuperação de Aparelhos Molhados</a></li>
+                <li><a href="pages/servicos.html#tampa">Troca de tampa traseira</a></li>
+              </ul>
+            </li>
             <li><a href="pages/garantia.html">Garantia</a></li>
             <li><a href="pages/processos.html">Processos</a></li>
             <li><a href="pages/sobre.html">Sobre a empresa</a></li>
@@ -32,55 +38,20 @@
       </div>
     </header>
 
-    <main class="centralizar">
-      <div
-        class="container"
-        style="color: white; font-family: Arial, sans-serif"
-      >
-        <div class="hero-textos" style="max-width: 550px">
-          <span
-            style="
-              color: #a855f7;
-              font-weight: bold;
-              letter-spacing: 2px;
-              display: block;
-              margin-bottom: 10px;
-            "
-          >
-            ASSISTÊNCIA TÉCNICA
-          </span>
-          <h1
-            style="
-              font-size: 42px;
-              font-weight: 800;
-              margin-bottom: 20px;
-              line-height: 1.2;
-            "
-          >
-            SEU CELULAR EM BOAS MÃOS
-          </h1>
-          <p
-            style="
-              color: #b3b3b3;
-              font-size: 16px;
-              line-height: 1.6;
-              margin-bottom: 30px;
-            "
-          >
+    <main class="centralizar index-main">
+      <div class="container index-container">
+        <div class="hero-textos">
+          <span class="hero-tag">ASSISTÊNCIA TÉCNICA</span>
+          <h1 class="hero-titulo">SEU CELULAR EM BOAS MÃOS</h1>
+          <p class="hero-subtitulo">
             Reparos rápidos, técnicos qualificados e garantia transparente para
             o seu smartphone.
           </p>
           <a
-            href="#"
-            style="
-              background-color: #a855f7;
-              color: white;
-              text-decoration: none;
-              padding: 15px 30px;
-              border-radius: 30px;
-              font-weight: bold;
-              display: inline-block;
-            "
+            href="https://wa.me/5511919523289?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20BYTE%20Assist%C3%AAncia%20T%C3%A9cnica%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.%0AModelo%20do%20aparelho%3A%20%0AProblema%20relatado%3A%20"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-whatsapp-orcamento"
           >
             SOLICITE ORÇAMENTO VIA WHATSAPP
           </a>

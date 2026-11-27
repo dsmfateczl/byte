@@ -3,51 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços - BYTE</title>
-    
+    <title>Nossos Serviços - BYTE</title>
     <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/servicos.css">
 </head>
 <body>
 
-    
     <header class="dflex">
         <div class="container dflex" style="justify-content: space-between; width: 100%;">
             <div class="logo-container">
-                <img class="logo" src="../images/atumalak2.png" alt="Logotipo BYTE">
+                <a href="telainicial.html">
+                    <img class="logo" src="../images/atumalak2.png" alt="Logotipo BYTE">
+                </a>
             </div>
             <nav>
                 <ul class="menu-links">
-                    <li><a href="servicos.html">Serviços</a></li>
+                    <li>
+                        <a href="servicos.html">Serviços</a>
+                        <ul class="submenu">
+                            <li><a href="servicos.html#tela">Troca de Tela</a></li>
+                            <li><a href="servicos.html#bateria">Substituição de Bateria</a></li>
+                            <li><a href="servicos.html#conector">Reparo em Conectores</a></li>
+                            <li><a href="servicos.html#oxidacao">Recuperação de Aparelhos Molhados</a></li>
+                            <li><a href="servicos.html#tampa">Troca de tampa traseira</a></li>
+                        </ul>
+                    </li>
                     <li><a href="garantia.html">Garantia</a></li>
                     <li><a href="processos.html">Processos</a></li>
                     <li><a href="sobre.html">Sobre a empresa</a></li>
-                    <li><a href="#">Vitrine</a></li> <!-- Deixamos o sustenido pois não tem essa tela -->
+                    <li><a href="vitrine.html">Vitrine</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    
-    <main class="centralizar">
+    <main id="s-main">
         <div class="container">
-            
-    
-            <div class="servicos-conteudo" style="max-width: 650px; color: white; font-family: Arial, sans-serif;">
-                <span style="color: #a855f7; font-weight: bold; letter-spacing: 2px; display: block; margin-bottom: 10px;">
-                    O QUE FAZEMOS
-                </span>
-                <h1 style="font-size: 42px; font-weight: 800; margin-bottom: 25px; color: #ffffff;">
-                    NOSSOS SERVIÇOS
-                </h1>
-                <p style="color: #b3b3b3; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
-                    Trabalhamos com manutenção preventiva e corretiva para smartphones de todas as marcas. Realizamos troca de tela quebrada, substituição de bateria viciada, reparo em conectores de carga e recuperação de aparelhos molhados.
-                </p>
-                <p style="color: #b3b3b3; font-size: 16px; line-height: 1.6;">
-                    Nossos diagnósticos são rápidos e detalhados para você saber exatamente o que seu celular precisa, com a transparência que você merece.
-                </p>
+            <div class="s-topo">
+                <span class="s-tag">O QUE FAZEMOS</span>
+                <h1>Nossos Serviços Especializados</h1>
+                <p>Trabalhamos com manutenção preventiva e corretiva para smartphones Android. Conheça abaixo cada um dos nossos principais procedimentos realizados com padrão de laboratório.</p>
             </div>
 
+            <div class="s-grid">
+                <section id="tela" class="s-card">
+                    <h2>Troca de Tela</h2>
+                    <p>Substituição completa do conjunto frontal (display e touch screen) utilizando peças de alta qualidade. Indicado para telas trincadas, manchas pretas, linhas coloridas ou touch que parou de responder.</p>
+                </section>
+
+                <section id="bateria" class="s-card">
+                    <h2>Substituição de Bateria</h2>
+                    <p>Troca da bateria viciada ou com desgaste por uma nova de excelente procedência. Resolve problemas de desligamentos repentinos, descarregamento rápido e celular que só funciona na tomada.</p>
+                </section>
+
+                <section id="conector" class="s-card">
+                    <h2>Reparo em Conectores</h2>
+                    <p>Troca ou ressolda do conector de carga (tipo USB-C ou Micro-USB). Ideal para aparelhos que não carregam direito, só pegam em determinado ângulo ou não reconhecem o cabo no computador.</p>
+                </section>
+
+                <section id="oxidacao" class="s-card">
+                    <h2>Recuperação de Aparelhos Molhados</h2>
+                    <p>Limpeza química especializada em ultrassom e desoxidação de componentes internos para aparelhos que tiveram contato com líquidos, evitando danos permanentes à placa.</p>
+                </section>
+
+                <section id="tampa" class="s-card">
+                    <h2>Troca de Tampa Traseira</h2>
+                    <p>Substituição da tampa traseira de vidro ou acrílico danificada por quedas. Devolve a estética original do aparelho e protege novamente os componentes internos contra poeira.</p>
+                </section>
+            </div>
         </div>
     </main>
 
